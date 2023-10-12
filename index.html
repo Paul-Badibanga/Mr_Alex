@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Charges</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h2>Parking Charges</h2>
+        <div class="container">
+            <div class="divOne">
+                <p class="para">Parking Time in hours</p>
+                <div class="subContainer">
+                    <p class="carNum">First</p>
+                    <input type="text" placeholder="Enter the parking time" class="input">
+                </div>
+
+                <div class="subContainer">
+                    <p class="carNum">Second</p>
+                    <input type="text" placeholder="Enter the parking time" class="input">
+
+                </div>
+
+                <div class="subContainer">
+                    <p class="carNum">Third</p>
+                    <input type="text" placeholder="Enter the parking time" class="input">
+                </div>
+            </div>
+            <div>
+                <p class="para">Parking Charges</p>
+                <p class="printingOne" id="TotalCharges" ></p>
+                <p class="printingTwo" id="TotalCharges"></p>
+                <p class="printingTree" id="TotalCharges"></p>
+            </div>
+        </div>
+
+        <div>
+            <p class="btn" id="TotalChargesBtn" onclick="calculateCharges()">Calculate</p>
+        </div>
+    </div>
+    </main>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

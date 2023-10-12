@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    background-color: rgb(240, 238, 238);
+    padding: 10px;
+    border-radius: 10px;
+}
+h2 {
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.divOne {
+    border-right: solid 2px orange;
+    padding-right: 10px;
+}
+.subContainer{
+    display: flex;
+    align-items: center;
+}
+.subContainer .carNum{
+    background-color: white;
+    padding: 10px;
+    height: 23px;
+    border: solid black 1px;
+}
+
+.container div .para{
+    border-bottom: solid 2px orange;
+    padding: 10px;
+}
+.container div input{
+    padding: 10px;
+    height: 20px;
+}
+
+#TotalCharges {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    color: rgb(9, 223, 9);
+    margin-top: 30px;
+    height: 25px;
+}
+
+#TotalChargesBtn {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    color: rgb(9, 223, 9);
+    margin-top: 30px;
+    height: 25px;
+    border-radius: 10px;
+}
