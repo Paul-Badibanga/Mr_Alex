@@ -16,6 +16,7 @@ function calculateCharges(){
     firstCar()
     secondCar()
     thirdCar()
+    total()
 }
 
 
@@ -35,16 +36,16 @@ function firstCar(){
     }else if (inputEl[0].value <= 3) {
         totalCharges = 12
         //console.log(totalCharges)
-        printEl.innerHTML = `R ${totalCharges}`
+        printEl.innerHTML = `${totalCharges}`
     }else if (inputEl[0].value > 3 && inputEl[0].value < 24){
         //totalCharges = Number(inputEl[2].value) + 0.9
         //console.log(totalCharges)
         totalCharges = 12.9
-        printEl.innerHTML = `R ${totalCharges}`
+        printEl.innerHTML = `${totalCharges}`
     }else if (inputEl[0].value == 24){
         totalCharges = 20
         //console.log(totalCharges)
-        printEl.innerHTML = `R ${totalCharges}`
+        printEl.innerHTML = `${totalCharges}`
     }
 }
 
@@ -61,16 +62,16 @@ function secondCar(){
     }else if (inputEl[1].value <= 3) {
         totalCharges = 12
         //console.log(totalCharges)
-        printEl2.innerHTML = `R ${totalCharges}`
+        printEl2.innerHTML = `${totalCharges}`
     }else if (inputEl[1].value > 3 && inputEl[1].value < 24){
         //totalCharges = Number(inputEl[2].value) + 0.9
         //console.log(totalCharges)
         totalCharges = 12.9
-        printEl2.innerHTML = `R ${totalCharges}`
+        printEl2.innerHTML = `${totalCharges}`
     }else if (inputEl[1].value == 24){
         totalCharges = 20
         //console.log(totalCharges)
-        printEl2.innerHTML = `R ${totalCharges}`
+        printEl2.innerHTML = `${totalCharges}`
     }
 }
 
@@ -86,17 +87,30 @@ function thirdCar(){
     }else if (inputEl[2].value <= 3) {
         totalCharges = 12
         //console.log(totalCharges)
-        printEl3.innerHTML = `R ${totalCharges}`
+        printEl3.innerHTML = `${totalCharges}`
     }else if (inputEl[2].value > 3 && inputEl[2].value < 24){
         //totalCharges = Number(inputEl[2].value) + 0.9
         //console.log(totalCharges)
         totalCharges = 12.9
-        printEl3.innerHTML = `R ${totalCharges}`
+        printEl3.innerHTML = `${totalCharges}`
     }else if (inputEl[2].value == 24){
         totalCharges = 20
         //console.log(totalCharges)
-        printEl3.innerHTML = `R ${totalCharges}`
+        printEl3.innerHTML = `${totalCharges}`
     }
     
 }
 
+function total(){
+    //printing total time 
+    const totalTime = Number(inputEl[0].value)+Number(inputEl[1].value)+Number(inputEl[2].value)
+    const timeValue =  document.querySelector('.totalTime')
+    timeValue.value = `${totalTime} Hours`
+
+     //printing total charges
+     const chargeValue = document.querySelectorAll('.charges')
+     let total = Number(chargeValue[0].innerHTML)+Number(chargeValue[1].innerHTML) + Number(chargeValue[2].innerHTML)
+     console.log(total)
+     document.querySelector('.printingTotal').innerHTML = `Rands ${total}`;
+    
+}
