@@ -58,3 +58,10 @@ h2 {
     height: 25px;
     border-radius: 10px;
 }
+.btn {
+    cursor: pointer;
+}
+#TotalChargesBtn:hover{
+    background-color: rgb(9, 223, 9);
+    color: white;
+}
