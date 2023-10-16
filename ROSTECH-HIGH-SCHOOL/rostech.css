@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+main {
+    border: solid orange;
+    padding: 10px;
+}
+main h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.gridContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.gridContainer .leftGrid, .rightGrid{
+    border: solid orange 2px;
+    padding: 5px;
+}
+
+.rightGrid .subFlex label {
+    border: 1px solid;
+    padding: 3px;
+    margin-right: 5px;
+}
+.subFlex input, select {
+    height: 27px;
+}
+
+.subFlex label, input, select {
+    margin-bottom: 10px;
+}
+
+/*-------------------buttons stage----------------------------------*/
+ button{
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    margin-right: 25px;
+    position: relative;
+    cursor: pointer;
+
+}
+.cubeStage .exit-btn{
+    margin-right: 0;
+}
+
+button::before{
+    content: '';
+    position: absolute;
+    /*top: 10px;*/
+    bottom: 10px;
+    right: -20px;
+    height: 100%;
+    width: 20px;
+    background-color: rgba(255, 166, 0, 0.692);
+    transform: skewY(-45deg);
+}
+.buttonContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button::after{
+    content: '';
+    position: absolute;
+    /*top: 10px;*/
+    top: -20px;
+    left: 10px;
+    height: 20px;
+    width: 100%;
+    background-color: rgba(255, 166, 0, 0.692);
+    transform: skewX(-45deg);
+}
+
+ button:hover{
+    background-color: white;
+    color: orange;
+    border: solid orange 1px;
+}
